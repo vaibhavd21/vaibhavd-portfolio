@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://kit.fontawesome.com/9734fdbb56.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Vaibhav Dubewar | Portfolio</title>
+
+    <style>
+        body {
+            padding: 20px;
+            font-family: 'Lato', sans-serif;
+            font-size: 16px;
+            background: #3a3b3b;
+            color: rgb(214, 208, 208);
+        }
+
+        .header {
+            text-align: center;
+        }
+
+        .profile {
+            width: 150px;
+        }
+
+        .profile-name {
+            margin-top: 5px;
+            font-size: 36px;
+        }
+
+        .content {
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        a {
+            color: #258cdb;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #2571db;
+        }
+
+        h1 {
+            font-size: 28px;
+        }
+
+        .ytp-chrome-top {
+            display: none !important;
+        }
+
+        .embed {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+
+        .embed iframe,
+        .embed object,
+        .embed embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="page-content" aria-label="Content">
+        <div class="wrapper">
+            <div class="header">
+                <img style="border-radius: 150px; border: 5px solid rgb(214, 208, 208); height: 280px; width: 280px;"
+                    class="profile" src="/static/myPhoto.jfif" alt="vaibhavd21Photo">
+                <h1 style="font-size: 45px; align-self: center;" class="profile-name pt-2">Vaibhav Dubewar</h1>
+                <p style="font-size: 24px;">I'm passionate <b><span
+                            style="border-bottom: 3px solid #18d26e;">developer</span></b></p>
+
+                <div style="display: flex; align-items: center;
+                justify-content: center;" class="my-4">
+
+
+                    <a href="/home"><button type="button" class="btn btn-outline-secondary px-4 mx-2">Home</button></a>
+                    <a href="/projects"><button type="button" class="btn btn-outline-secondary px-4 mx-2">Projects</button></a>
+                    <a href="/education"><button type="button" class="btn btn-outline-secondary px-4 mx-2">Education</button></a>
+                    <!--<ul class="pure-menu-list">
+
+                        <li class="pure-menu-item"><a href="/" class="pure-menu-link">Home</a></li>
+
+                        <li class="pure-menu-item"><a href="/projects" class="pure-menu-link">Projects</a></li>
+
+                        <li class="pure-menu-item"><a href="/About" class="pure-menu-link">About</a></li>
+
+                    </ul>-->
+                </div>
+            </div>
+
+            <hr style="height: 4px; color: bisque;" class="my-5">
+
+            {% block content %}
+            {% endblock content %}
+
+            <br>
+            <div class="footer"
+                style="color: white; background-color: #37383a;text-align: center; bottom: 0mm; left: 0mm; width: 100%;">
+                <div class="footer_name"
+                    style="font-size: 12px; font-family: Verdana, Geneva, Tahoma, sans-serif; align-items: center; color: white; height: 20px; background-color: #37383a;text-align: center; bottom: 0mm; left: 0mm; width: 100%;">
+                    Designed by <a href="https://github.com/vaibhavd21"><b style="color: #18d26e; text-decoration: none; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">vaibhavd21</b></a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!-- Designed by <a href="https://github.com/vaibhavd21"><i style="color: #18d26e; text-decoration: none;"><b>vaibhavd21</b></i></a>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
